@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header{
+  text-align: center;
+  top: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, MediumTurquoise, CornflowerBlue) !important;
+}
+ body  {
+  background: url('../../../../OneDrive/Desktop/tagore.jpg') no-repeat center center/cover;
+ }
+
+@media (min-width: 768px) {
+  body {
+    background: url('bg-md.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: url('bg-lg.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: url('bg-xl.jpg') no-repeat center center/cover;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  background: White;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: MidnightBlue;
+  pointer-events: none;
+  background-color: Whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.display:hover {
+  background-color: Gainsboro;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: LightGray;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: Gainsboro;
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  color: DodgerBlue;
+}
+
+.calculator{
+  margin-top:20px;
+  bottom:10px;
+  left:15px;
+  font-weight: bold;
+  font-size:18px;
+}
+
+.footer{
+  position:fixed;
+  bottom: 10px;
+  left:15px;
+  font-weight: bold;
+  font-size:18px;
+}
